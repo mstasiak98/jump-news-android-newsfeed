@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_margin="0dp"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/img_headline"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/no_img"
+            android:scaleType="centerCrop">
+
+        </ImageView>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/t_title"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLines="3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:id="@+id/t_source"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
